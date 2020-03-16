@@ -6,7 +6,7 @@
 //激活接口
 function activate($vendor_sn, $vendor_key)
 {
-    $api_domain = 'https://api.shouqianba.com';
+    $api_domain = 'https://vsi-api.shouqianba.com';
     $url = $api_domain .'/terminal/activate';
 
     $params['app_id'] = '';    //app id，从服务商平台获取
@@ -24,7 +24,7 @@ function activate($vendor_sn, $vendor_key)
 //签到接口
 function checkin($terminal_sn, $terminal_key)
 {
-    $api_domain = 'https://api.shouqianba.com';
+    $api_domain = 'https://vsi-api.shouqianba.com';
     $url = $api_domain . '/terminal/checkin';
 
     $params['terminal_sn'] = $terminal_sn;       //终端号
@@ -40,7 +40,7 @@ function checkin($terminal_sn, $terminal_key)
 //预下单接口
 function precreate($terminal_sn, $terminal_key)
 {
-    $api_domain = 'https://api.shouqianba.com';
+    $api_domain = 'https://vsi-api.shouqianba.com';
     $url = $api_domain . '/upay/v2/precreate';
 
     $params['terminal_sn'] = $terminal_sn;      //收钱吧终端ID
@@ -68,7 +68,7 @@ function precreate($terminal_sn, $terminal_key)
 //支付接口
 function  pay($terminal_sn, $terminal_key)
 {
-    $api_domain = 'https://api.shouqianba.com';  //收钱吧服务器域名
+    $api_domain = 'https://vsi-api.shouqianba.com';  //收钱吧服务器域名
     $url = $api_domain . "/upay/v2/pay";
 
     $params['terminal_sn'] = $terminal_sn;              //终端号
@@ -97,7 +97,7 @@ function  pay($terminal_sn, $terminal_key)
 //退款接口
 function refund($terminal_sn, $terminal_key)
 {
-    $api_domain = 'https://api.shouqianba.com';
+    $api_domain = 'https://vsi-api.shouqianba.com';
     $url = $api_domain . '/upay/v2/refund';
 
     $params['terminal_sn'] = $terminal_sn;       //收钱吧终端ID
@@ -118,7 +118,7 @@ function refund($terminal_sn, $terminal_key)
 //查询接口
 function query($terminal_sn, $terminal_key)
 {
-    $api_domain = 'https://api.shouqianba.com';
+    $api_domain = 'https://vsi-api.shouqianba.com';
     $url = $api_domain . '/upay/v2/query';
 
     $params['terminal_sn'] = $terminal_sn;      //收钱吧终端ID
